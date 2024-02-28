@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+    <title>Criptografe as suas Mensagnes</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <a class="cabecalho__link" href="index.html"
+        ><img
+          class="cabecalho__link"
+          src="assets\logo Alura.png"
+          alt="logo Alura"
+      /></a>
+    </header>
+    <main>
+      <div class="body__all__content">
+        <section class="container_codificar">
+          <textarea class="areaCodificar" id="areaDeTexto" rows="50" cols="25">
+Digite o seu texto...</textarea
+          >
+          <label class="label" for="botaoCodificar"
+            ><img class="imagemlabel" src="assets\frame botao criptografar.png"
+          /></label>
+          <div class="botoes">
+            <button class="botao__codificar" id="botaoCodificar">
+              Criptografar
+            </button>
+            <button class="botao__descodificar" id="botaoDescodificar">
+              Descriptografar
+            </button>
+          </div>
+        </section>
+
+        <section class="container__criptografado">
+
+        <div class="caixaInicial">
+          <img
+            class="imagemInicial"
+            id="mensagemInicial"
+            src="assets\figura na de criptografar.png"
+            alt="menino segurando observando um diamante"
+          />
+          <h1 class="mensagemInicial" id="mensagemInicial">
+            Nenhuma Mensagem<br />
+            Encontrada
+          </h1>
+          <br />
+          <p class="mensagemInicial" id="mensagemInicial">
+            Digite um texto que você deseja <br />criptografar ou
+            descriptografar.
+          </p>
+        </div>
+
+        <div class="caixaSecundaria" style="display: none">
+          <textarea
+            class="areaCriptografada"
+            id="areaDeTextoCodificada"
+            rows="15"
+            cols="4"
+          >
+  Mensagem Codificada</textarea
+          >
+          <button
+            class="botao__copiar"
+            type="button"
+            onclick="CopyTexto('areaDeTextoCodificada')"
+          >
+            Copiar
+          </button>
+        </div>
+    </section>
+    </main>
+    <footer class="rodape">
+      <div class="rodape__conteudo">
+        <p class="rodape__texto">Elaborado por Maurício Dias</p>
+        <a
+          class="rodape__links"
+          href="https://github.com/devxxx-dias"
+          style="cursor: pointer"
+        >
+          <img class="rodape__links" src="./assets/github.png" />
+        </a>
+        <a
+          class="rodape__links"
+          href="https://www.linkedin.com/in/diasmauricio"
+        >
+          <img class="rodape__links" src="./assets/linkedin.png" />
+        </a>
+        <a class="rodape__links" href="https://instagram.com/mauriciondias">
+          <img class="rodape__links" src="assets\instagram.png" />
+        </a>
+      </div>
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>
